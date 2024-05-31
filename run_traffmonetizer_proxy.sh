@@ -20,7 +20,7 @@ docker run -d --name $container_name1 -e TOKEN=$token $image_name
 
 # Jalankan container kedua dengan proxy SOCKS5
 container_name2="traffmonetizer_2"
-proxy_socks5="socks5://dmqkq:tjwpatm9@45.195.80.59:5432"
+proxy_socks5="http://dmqkq:tjwpatm9@45.195.80.59:5432"
 
 # Hentikan dan hapus container jika sudah ada
 if [ "$(docker ps -a -q -f name=$container_name2)" ]; then
